@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Calculator Practice</title>
-    <meta name="description" content="">
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-security-policy" content="default-src 'self'">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link href="style.css" rel="stylesheet">
   </head>
+  <!-- ============ Body =============== -->
   <body>
-    <h1 class="heading">Simple Calculator for practice</h1>
+    <h1 class="heading">Simple Calculator</h1>
+
+    <!-- ====== Calculator Main Container ======= -->
     <div class="container">
-      
-      <input type="text" id="displayValues"  readonly>
-      
-      <div class="calculatorButton">
+      <input type="text" id="displayValues" readonly>
+
+      <!-- ====== Calculator button Container ======= -->
+      <div class="calculatorButtons">
         <button type="button" class="btn" onclick="
-        dispNumber='';
-          document.getElementById('displayValues').value=dispNumber;
+          displayNumber='';
+          document.getElementById('displayValues').value=displayNumber;
           ">C</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='*';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='*';
+          document.getElementById('displayValues').value=displayNumber;
         ">*</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='/';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='/';
+          document.getElementById('displayValues').value=displayNumber;
         ">/</button>
 
         <button type="button" class="btn" onclick="
-        dispNumber+='-';
-        document.getElementById('displayValues').value=dispNumber;
-        ">-</button>
+        displayNumber+='-';
+          document.getElementById('displayValues').value=displayNumber;
+          ">-</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='7';
-        document.getElementById('displayValues').value=dispNumber;
-        ">7</button>
+        displayNumber+='7';
+          document.getElementById('displayValues').value=displayNumber;
+          ">7</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='8';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='8';
+        document.getElementById('displayValues').value=displayNumber;
         ">8</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='9';
-        document.getElementById('displayValues').value=dispNumber;
-        ">9</button>
+        displayNumber+='9';
+          document.getElementById('displayValues').value=displayNumber;
+          ">9</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='+';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='+';
+          document.getElementById('displayValues').value=displayNumber;
         ">+</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='4';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='4';
+        document.getElementById('displayValues').value=displayNumber;
         ">4</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='5';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='5';
+          document.getElementById('displayValues').value=displayNumber;
         ">5</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='6';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='6';
+        document.getElementById('displayValues').value=displayNumber;
         ">6</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='.';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='.';
+          document.getElementById('displayValues').value=displayNumber;
         ">.</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='1';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='1';
+          document.getElementById('displayValues').value=displayNumber;
         ">1</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='2';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='2';
+        document.getElementById('displayValues').value=displayNumber;
         ">2</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='3';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='3';
+        document.getElementById('displayValues').value=displayNumber;
         ">3</button>
+
         <button type="button" class="btn" onclick="
-        dispNumber+='0';
-        document.getElementById('displayValues').value=dispNumber;
+        displayNumber+='0';
+        document.getElementById('displayValues').value=displayNumber;
         ">0</button>
-        <button type="button" class="btn" onclick="
-        dispNumber=eval(dispNumber);
-        document.getElementById('displayValues').value=dispNumber;
+
+        <button id="equalButton" type="button" class="btn" onclick="       
+        displayNumber = eval(displayNumber);
+        document.getElementById('displayValues').value=displayNumber;
         ">=</button>
       </div>
+      <!-- ====== Calculator button Container end ======= -->
     </div>
-    <script src="./index.js"></script>
+    <!-- ====== Calculator Main Container ======= -->
+
+    <!-- ====== Linking javaScript File ======= -->
+    <script src="./script.js"></script>
   </body>
 </html>
