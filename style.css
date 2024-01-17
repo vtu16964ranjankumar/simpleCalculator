@@ -20,7 +20,7 @@
   border: 1px solid antiquewhite;
   border-radius: 5px;
   width: 350px;
-  margin-left: 50%;
+  margin-left: 40%;
   margin-top: 10px;
 }
 .container .calculatorButton{
@@ -61,4 +61,14 @@
   padding-top: 10px;
   padding-bottom: 5px;
   border: 1px solid antiquewhite;
+}
+button:link,button:visited{
+  background-color: antiquewhite;
+
+}
+button:hover{
+  background-color: antiquewhite;
+}
+button:active{
+  background-color: rgb(253, 206, 144);
 }
